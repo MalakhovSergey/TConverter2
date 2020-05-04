@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="TConverter2" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="T-Conventer" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rDF-lp-5bH">
+                                <rect key="frame" x="88" y="68" width="254" height="62"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="rDF-lp-5bH" secondAttribute="height" multiplier="127:31" id="IIb-DQ-N2x"/>
+                                    <constraint firstAttribute="height" constant="62" id="ldM-0X-GWo"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Rockwell-Regular" family="Rockwell" pointSize="31"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="u9U-Rv-MMo">
+                                <rect key="frame" x="86" y="433" width="258" height="31"/>
+                                <connections>
+                                    <action selector="sliderValueChanged:" destination="BYZ-38-t0r" eventType="valueChanged" id="MJ7-69-JRh"/>
+                                </connections>
+                            </slider>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Centimeters" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LIb-on-dN9">
+                                <rect key="frame" x="97" y="303" width="234" height="50"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="21"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Meters" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lAq-LE-ECc">
+                                <rect key="frame" x="124" y="531" width="164.5" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="6HJ-0h-Wxh"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="21"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="u9U-Rv-MMo" firstAttribute="top" secondItem="LIb-on-dN9" secondAttribute="bottom" constant="80" id="0ft-Fh-tlC"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" relation="lessThanOrEqual" secondItem="lAq-LE-ECc" secondAttribute="bottom" constant="291" id="0g9-hg-EId"/>
+                            <constraint firstItem="rDF-lp-5bH" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="88" id="9C0-7l-AB9"/>
+                            <constraint firstItem="rDF-lp-5bH" firstAttribute="centerX" secondItem="u9U-Rv-MMo" secondAttribute="centerX" id="BDl-Jd-zy0"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="u9U-Rv-MMo" secondAttribute="trailing" constant="72" id="NMw-7M-hJk"/>
+                            <constraint firstItem="LIb-on-dN9" firstAttribute="centerX" secondItem="lAq-LE-ECc" secondAttribute="centerX" constant="7.75" id="PLC-8E-jdL"/>
+                            <constraint firstItem="LIb-on-dN9" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" constant="7" id="fWe-WE-oQe"/>
+                            <constraint firstItem="u9U-Rv-MMo" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="hwS-do-ikQ"/>
+                            <constraint firstItem="LIb-on-dN9" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="97" id="jSf-9j-9B7"/>
+                            <constraint firstItem="rDF-lp-5bH" firstAttribute="leading" secondItem="u9U-Rv-MMo" secondAttribute="leading" id="nFy-su-pOg"/>
+                            <constraint firstItem="rDF-lp-5bH" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="24" id="sJc-yM-reG"/>
+                            <constraint firstItem="lAq-LE-ECc" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="124" id="v8U-VM-a1R"/>
+                            <constraint firstItem="lAq-LE-ECc" firstAttribute="top" secondItem="u9U-Rv-MMo" secondAttribute="bottom" constant="68" id="xwa-Y4-dbo"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="mLabel" destination="lAq-LE-ECc" id="toI-hC-Dwu"/>
+                        <outlet property="slider" destination="u9U-Rv-MMo" id="0Oo-OO-gee"/>
+                        <outlet property="smLabel" destination="LIb-on-dN9" id="ffa-Qj-rk2"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="137.68115942028987" y="137.94642857142856"/>
+        </scene>
+    </scenes>
+</document>

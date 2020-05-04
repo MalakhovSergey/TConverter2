@@ -99,13 +99,9 @@
 		0426693E2390BBDB006D7D93 /* TConverter2 */ = {
 			isa = PBXGroup;
 			children = (
-				0426693F2390BBDB006D7D93 /* AppDelegate.swift */,
-				042669412390BBDB006D7D93 /* SceneDelegate.swift */,
-				042669432390BBDB006D7D93 /* ViewController.swift */,
-				042669452390BBDB006D7D93 /* Main.storyboard */,
-				042669482390BBDC006D7D93 /* Assets.xcassets */,
-				0426694A2390BBDC006D7D93 /* LaunchScreen.storyboard */,
-				0426694D2390BBDC006D7D93 /* Info.plist */,
+				C50FB8A424601D93008C5632 /* Controllers */,
+				C50FB8A524601DA7008C5632 /* iBiilder */,
+				C50FB8A624601DC8008C5632 /* SupportFile */,
 			);
 			path = TConverter2;
 			sourceTree = "<group>";
@@ -126,6 +122,34 @@
 				042669632390BBDC006D7D93 /* Info.plist */,
 			);
 			path = TConverter2UITests;
+			sourceTree = "<group>";
+		};
+		C50FB8A424601D93008C5632 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				042669432390BBDB006D7D93 /* ViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		C50FB8A524601DA7008C5632 /* iBiilder */ = {
+			isa = PBXGroup;
+			children = (
+				042669412390BBDB006D7D93 /* SceneDelegate.swift */,
+				042669452390BBDB006D7D93 /* Main.storyboard */,
+				0426694A2390BBDC006D7D93 /* LaunchScreen.storyboard */,
+			);
+			path = iBiilder;
+			sourceTree = "<group>";
+		};
+		C50FB8A624601DC8008C5632 /* SupportFile */ = {
+			isa = PBXGroup;
+			children = (
+				0426693F2390BBDB006D7D93 /* AppDelegate.swift */,
+				042669482390BBDC006D7D93 /* Assets.xcassets */,
+				0426694D2390BBDC006D7D93 /* Info.plist */,
+			);
+			path = SupportFile;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -436,7 +460,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = W25F49ND23;
-				INFOPLIST_FILE = TConverter2/Info.plist;
+				INFOPLIST_FILE = TConverter2/SupportFile/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -454,7 +478,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = W25F49ND23;
-				INFOPLIST_FILE = TConverter2/Info.plist;
+				INFOPLIST_FILE = TConverter2/SupportFile/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
